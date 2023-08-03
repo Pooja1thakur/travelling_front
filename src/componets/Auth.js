@@ -39,14 +39,15 @@ const Auth = () => {
     console.log(inputs);
     if (isSignup) {
       sendRequest("signup")
-        .then((data) => localStorage.setItem("userId", data.user._id))
+        .then((data) => localStorage.setItem("userId", data?.user._id))
         .then(() => dispath(authActions.login()))
         .then(() => naviagte("/blogs"));
     } else {
-      sendRequest()
-        .then((data) => localStorage.setItem("userId", data.user._id))
-        .then(() => dispath(authActions.login()))
-        .then(() => naviagte("/blogs"));
+      // sendRequest()
+      //   .then((data) => localStorage.setItem("userId", data?.user._id))
+      //   .then(() => dispath(authActions.login()))
+      //   .then(() => naviagte("/blogs"));
+      console.log("err")
     }
   };
   return (

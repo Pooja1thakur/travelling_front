@@ -37,13 +37,16 @@ import {
         {" "}
         <Card
           sx={{
-            width: "40%",
+            width: "60%",
+            
             margin: "auto",
             mt: 2,
             padding: 2,
             boxShadow: "5px 5px 10px #ccc",
             ":hover": {
+              transition:"0.10s",
               boxShadow: "10px 10px 20px #ccc",
+              
             },
           }}
         >
@@ -70,8 +73,10 @@ import {
             title={title}
           />
           <CardMedia
+          
             component="img"
-            height="194"
+            height="350"
+          
             image={imageURL}
             alt="Paella dish"
           />
