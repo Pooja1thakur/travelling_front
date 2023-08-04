@@ -6,7 +6,7 @@ const UserBlogs = () => {
   const id = localStorage.getItem("userId");
   const sendRequest = async () => {
     const res = await axios
-      .get(`https://backend-2mbt.onrender.com/api/blog/user/${id}`)
+      .get(`https://travel-backend-v5oo.onrender.com/api/blog/user/${id}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;

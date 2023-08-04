@@ -22,7 +22,7 @@ import {
     };
     const deleteRequest = async () => {
       const res = await axios
-        .delete(`https://backend-2mbt.onrender.com/api/blog/${id}`)
+        .delete(`https://travel-backend-v5oo.onrender.com/api/blog/${id}`)
         .catch((err) => console.log(err));
       const data = await res.data;
       return data;

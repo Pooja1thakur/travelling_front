@@ -5,7 +5,7 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState();
   const sendRequest = async () => {
     const res = await axios
-      .get("https://backend-2mbt.onrender.com/api/blog")
+      .get("https://travel-backend-v5oo.onrender.com/api/blog")
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;

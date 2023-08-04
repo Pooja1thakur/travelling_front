@@ -21,7 +21,7 @@ const AddBlog = () => {
   };
   const sendRequest = async () => {
     const res = await axios
-      .post("https://backend-2mbt.onrender.com/api/blog/add", {
+      .post("https://travel-backend-v5oo.onrender.com/api/blog/add", {
         title: inputs.title,
         description: inputs.description,
         image: inputs.imageURL,
