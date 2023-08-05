@@ -22,7 +22,7 @@ import {
     };
     const deleteRequest = async () => {
       const res = await axios
-        .delete(`http://localhost:5000/api/blog/${id}`)
+        .delete(`https://backend-trv.onrender.com/api/blog/${id}`)
         .catch((err) => console.log(err));
       const data = await res.data;
       return data;
@@ -52,6 +52,7 @@ import {
         >
           {isUser && (
             <Box display="flex">
+              
               <IconButton onClick={handleEdit} sx={{ marginLeft: "auto" }}>
                 <ModeEditOutlineIcon color="warning" />
               </IconButton>
